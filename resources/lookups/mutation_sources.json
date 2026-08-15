@@ -1,0 +1,54 @@
+{
+    "somatic_sources": [
+        "ccg",
+        "somaticdb",
+        "cosmicv95",
+        "ccle",
+        "cosmic",
+        "pancan",
+        "cbioportal",
+        "beataml",
+        "tcga",
+        "icgc",
+        "mayo_clinical"
+    ],
+    "germline_sources": [
+        "dbsnp",
+        "gnomad",
+        "1000genomes",
+        "clinvar",
+        "exac",
+        "hapmap",
+        "gtex",
+        "esp",
+        "ukbiobank"
+    ],
+    "nonhuman_sources": [
+        "c_elegans",
+        "arabidopsis",
+        "drosophila",
+        "mmusculus",
+        "mouse",
+        "virus",
+        "rnorvegicus",
+        "rat",
+        "yeast",
+        "plant",
+        "zebrafish",
+        "bacteria"
+    ],
+    "clinical_significance_mapping": [
+        "conflicting interpretations",
+        "protective",
+        "uncertain significance",
+        "association",
+        "somatic",
+        "other",
+        "likely pathogenic",
+        "likely benign",
+        "drug response",
+        "risk factor",
+        "pathogenic",
+        "benign"
+    ]
+}

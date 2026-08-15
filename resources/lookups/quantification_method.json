@@ -1,0 +1,18 @@
+{
+    "quantification_methods": [
+        "salmon",
+        "star",
+        "kallisto",
+        "htseq",
+        "featurecounts",
+        "rsem",
+        "cufflinks",
+        "stringtie",
+        "sailfish",
+        "subread",
+        "bowtie2",
+        "tophat",
+        "cellranger",
+        "alevin"
+    ]
+}

@@ -1,0 +1,966 @@
+{
+    "CpG_ID": [
+        "CpG_ID",
+        "cpg",
+        "probe",
+        "composite element ref",
+        "probe_id",
+        "ilmn",
+        "id_ref",
+        "id",
+        "hybridization ref",
+        "cg",
+        "#id",
+        "ENTITY_STABLE_ID"
+    ],
+    "Sample_ID": [
+        "sampleID",
+        "Sample_ID",
+        "sample_name",
+        "xena_sample",
+        "biospecimen_id",
+        "sample",
+        "geo_accession",
+        "s_id",
+        "sid"
+    ],
+    "Beta_Value": [
+        "beta value",
+        "m_value",
+        "value",
+        "intensity",
+        "beta",
+        "methylation_level"
+    ],
+    "Adjusted_P_Value": [
+        "fdr",
+        "padj",
+        "adjusted p-value",
+        "adj_p",
+        "adj_p_value",
+        "adjp",
+        "adjusted"
+    ],
+    "Chromosome": [
+        "chr",
+        "chromosome",
+        "chrom",
+        "chromosome_name",
+        "Site1_Chromosome"
+    ],
+    "Position_Start": [
+        "Start_Position",
+        "mapinfo",
+        "position",
+        "start",
+        "pos",
+        "bp",
+        "coordinate",
+        "chromstart",
+        "position_start",
+        "Site1_Position"
+    ],
+    "Position_End": [
+        "End_Position",
+        "end",
+        "stop",
+        "chromend",
+        "position_end",
+        "Site2_Position"
+    ],
+    "Gene_Symbol": [
+        "gene_symbol",
+        "symbol",
+        "gene_name",
+        "hugo",
+        "Hugo_Symbol",
+        "gene",
+        "Site1_Hugo_Symbol",
+        "NAME"
+    ],
+    "Region_Context": [
+        "relation_to_ucsc_cpg_island",
+        "region",
+        "context",
+        "island",
+        "gene_region",
+        "annotation",
+        "strand",
+        "Region_Context",
+        "DESCRIPTION"
+    ],
+    "Modification_Type": [
+        "mod",
+        "methyl",
+        "hydroxy",
+        "Modification_Type"
+    ],
+    "methylation_caller_software": [
+        "caller",
+        "software",
+        "tool"
+    ],
+    "external_entity_id": [
+        "_PATIENT",
+        "patient_id",
+        "external_patient_id",
+        "icgc_donor_id",
+        "pat_id",
+        "pid",
+        "pt_id",
+        "model_id",
+        "mouse_id",
+        "rat_id",
+        "preclinical_id",
+        "lab_animal_id",
+        "submitter_id",
+        "submitter"
+    ],
+    "organism": [
+        "organism",
+        "org",
+        "species",
+        "source_organism",
+        "organism_name"
+    ],
+    "gender": [
+        "gender",
+        "sex",
+        "biological_sex",
+        "assigned_sex",
+        "gender_identity",
+        "sex_at_birth",
+        "gender.demographics",
+        "gender.patient",
+        "donor_sex",
+        "gender.demographic"
+    ],
+    "date_of_birth": [
+        "dob",
+        "date_of_birth",
+        "birth_date",
+        "birth_dt",
+        "birthday"
+    ],
+    "days_to_birth": [
+        "days_to_birth",
+        "dtb",
+        "bd",
+        "birth_day",
+        "birthday",
+        "days_to_birth.demographic"
+    ],
+    "year_of_birth": [
+        "year_of_birth",
+        "yb",
+        "by",
+        "birth_year",
+        "birthyear",
+        "year_of_birth.demographic"
+    ],
+    "age_at_diagnosis": [
+        "age_at_initial_pathologic_diagnosis",
+        "age_at_index.demographic",
+        "age_at_diagnosis",
+        "age_at_initial_contact",
+        "initial_age",
+        "age_at_collection",
+        "age",
+        "collection_age",
+        "age_at_sample_collection",
+        "age_at_time_of_collection",
+        "age_at_index",
+        "donor_age_at_diagnosis"
+    ],
+    "ethnicity": [
+        "ethnicity",
+        "ethnic_group",
+        "ethnic_origin",
+        "ethnic_background",
+        "ethnicity.demographic"
+    ],
+    "race": [
+        "race",
+        "racial_group",
+        "racial_category",
+        "race.demographic"
+    ],
+    "country_of_origin": [
+        "country_of_origin",
+        "country",
+        "nationality",
+        "origin",
+        "birth_country",
+        "country_of_birth",
+        "country_origin"
+    ],
+    "occupation": [
+        "occupation",
+        "job",
+        "job_title",
+        "profession",
+        "career",
+        "employment",
+        "work_type",
+        "role",
+        "position",
+        "job_catego"
+    ],
+    "education_level": [
+        "education_level",
+        "education",
+        "edu_level",
+        "academic_level",
+        "degree_level",
+        "qualification"
+    ],
+    "smoking_status": [
+        "tobacco_smoking_history_indicator",
+        "smoking_status",
+        "tobacco_use",
+        "smoking_habit",
+        "cigarette_use",
+        "tobacco_smoking_history_indicator"
+    ],
+    "alcohol_use": [
+        "alcohol_use",
+        "alcohol_consumption",
+        "alcohol_intake",
+        "drinking_status",
+        "alcohol_status",
+        "alcohol_history",
+        "alcohol_habit",
+        "ethanol_use",
+        "drink",
+        "alcohol",
+        "alcohol_history.exposures"
+    ],
+    "vital_status": [
+        "vital_status",
+        "status",
+        "alive_status",
+        "donor_vital_status",
+        "life_status",
+        "deceased_flag",
+        "alive_flag",
+        "living_status",
+        "mortality_status",
+        "OS_STATUS"
+    ],
+    "date_of_death": [
+        "date_of_death",
+        "death_date",
+        "dod",
+        "time_of_death",
+        "deceased_date",
+        "deceased_dt"
+    ],
+    "days_to_death": [
+        "days_to_death",
+        "DAYS_TO_DEATH",
+        "dtd",
+        "dd",
+        "death_day",
+        "deathday",
+        "days_to_death.demographic"
+    ],
+    "year_of_death": [
+        "year_of_death",
+        "yd",
+        "dy",
+        "death_year",
+        "deathyear",
+        "year_of_death.demographic"
+    ],
+    "cause_of_death": [
+        "cause_of_death",
+        "death_cause",
+        "death_reason"
+    ],
+    "diagnosis": [
+        "primary_disease",
+        "primary_diagnosis.diagnoses",
+        "PRIMARY_SITE_PATIENT",
+        "diagnosis",
+        "donor_diagnosis_icd10",
+        "clinical_diagnosis",
+        "diagnostic_label",
+        "condition",
+        "medical_diagnosis",
+        "primary_diagnosis",
+        "_primary_disease",
+        "disease_type",
+        "cancer_type_acronym"
+    ],
+    "diagnosis_date": [
+        "diagnosis_date",
+        "date_of_diagnosis",
+        "dx_date",
+        "diagnostic_date",
+        "date_diagnosed"
+    ],
+    "year_of_diagnosis": [
+        "year_of_diagnosis.diagnoses",
+        "year_of_initial_pathologic_diagnosis",
+        "year_of_diagnosis",
+        "year_diag",
+        "yeardiag",
+        "yearofdiagnosis"
+    ],
+    "overall_survival_time": [
+        "OS.time",
+        "overall_survival_time",
+        "donor_survival_time",
+        "OS_MONTHS"
+    ],
+    "comorbidities": [
+        "comorbidities",
+        "coexisting_conditions",
+        "comorbidity_list",
+        "co_morbidities",
+        "associated_conditions",
+        "secondary_conditions"
+    ],
+    "prior_treatments": [
+        "prior_treatments",
+        "prior_treatment",
+        "previous_treatments",
+        "previous_treatment",
+        "first_therapy_type",
+        "past_treatments",
+        "past_treatment",
+        "treatment_history",
+        "previous_therapies",
+        "treatment_records",
+        "history_neoadjuvant"
+    ],
+    "performance_status": [
+        "performance_status",
+        "functional_status",
+        "karnofsky_score",
+        "ecog_status",
+        "ps_score",
+        "functional_level"
+    ],
+    "family_history": [
+        "PRIOR_MALIGNANCY",
+        "family_history",
+        "hereditary_history",
+        "family_medical_history",
+        "genetic_history",
+        "family_conditions"
+    ],
+    "cardiovascular_disease": [
+        "cardiovascular_disease",
+        "cvd",
+        "heart_disease",
+        "cardiac_disease",
+        "cardiovascular_condition",
+        "heart_condition"
+    ],
+    "genotype": [
+        "genotype",
+        "genetic_profile",
+        "gene_type",
+        "genetic_type",
+        "strain_genotype",
+        "dna_profile",
+        "genetic_variation",
+        "mutation_profile"
+    ],
+    "strain": [
+        "strain",
+        "line",
+        "genetic_strain",
+        "organism_strain",
+        "substrain",
+        "breed",
+        "variant",
+        "model_strain"
+    ],
+    "disease_model": [
+        "disease_model",
+        "model_type",
+        "pathology_model",
+        "experimental_model",
+        "animal_model",
+        "disease_type",
+        "model_system",
+        "disease_representation"
+    ],
+    "housing_conditions": [
+        "housing_conditions",
+        "housing",
+        "living_conditions",
+        "environment_conditions",
+        "cage_conditions",
+        "facility_conditions",
+        "housing_environment",
+        "housing_type"
+    ],
+    "diet": [
+        "diet",
+        "feeding_regimen",
+        "nutrition",
+        "diet_type",
+        "feeding_protocol",
+        "dietary_habit",
+        "nutrition_plan",
+        "food_type"
+    ],
+    "procedures": [
+        "procedures",
+        "medical_procedures",
+        "experimental_procedures",
+        "protocols",
+        "methods",
+        "techniques",
+        "procedure_list",
+        "surgical_procedures"
+    ],
+    "observations": [
+        "observations",
+        "notes",
+        "observational_data",
+        "findings",
+        "measurements",
+        "experimental_observations",
+        "observed_results",
+        "observation_notes",
+        "note"
+    ],
+    "consent_status": [
+        "consent_status",
+        "consent",
+        "consent_given",
+        "consent_flag",
+        "consent_indicator",
+        "state.annotations",
+        "INFORMED_CONSENT_VERIFIED"
+    ],
+    "consent_version": [
+        "consent_version",
+        "consent_form_version",
+        "consent_ver"
+    ],
+    "data_sharing_restrictions": [
+        "sharing",
+        "restrictions",
+        "data_sharing",
+        "sharing_limitations",
+        "data_restrictions"
+    ],
+    "external_sample_id": [
+        "sampleID",
+        "Sample_ID",
+        "samplename",
+        "sample_name",
+        "xena_sample",
+        "biospecimen_id",
+        "sample",
+        "geo_accession",
+        "s_id",
+        "sid"
+    ],
+    "sample_type": [
+        "sample_type",
+        "type",
+        "sample_type.samples"
+    ],
+    "cell_type": [
+        "cell_type",
+        "cell lineage",
+        "cell_population",
+        "cell_subtype",
+        "cell_category",
+        "cell_class",
+        "cell_kind",
+        "cellular_type",
+        "cellular_identity",
+        "cell_desc",
+        "cellular_subtype",
+        "composition.samples",
+        "composition"
+    ],
+    "tissue_site": [
+        "tissue_site",
+        "tissue_or_organ_of_origin.diagnoses",
+        "primary_site",
+        "tumor_tissue_site",
+        "site",
+        "anatomic_site",
+        "tissue_source",
+        "biopsy_site",
+        "sample_site",
+        "organ_site",
+        "collection_site",
+        "anatomical_location",
+        "tissue_origin",
+        "tissue_or_organ_of_origin.diagnoses",
+        "primary_tissue"
+    ],
+    "collection_date": [
+        "collection_date",
+        "form_completion_date",
+        "date_collected",
+        "sampling_date",
+        "specimen_collection_date",
+        "date_of_collection",
+        "collection_dt",
+        "FORM_COMPLETION_DATE"
+    ],
+    "collection_time": [
+        "collection_time",
+        "time_collected",
+        "sampling_time",
+        "specimen_collection_time",
+        "time_of_collection",
+        "collection_tm"
+    ],
+    "collection_method": [
+        "collection_method",
+        "sampling_method",
+        "procedure",
+        "method_of_collection",
+        "specimen_collection_method",
+        "collection_technique",
+        "SAMPLE_COLLECTION_SOURCE"
+    ],
+    "preservation_method": [
+        "preservation_method",
+        "preservation_method.samples",
+        "preserve",
+        "storage_method",
+        "preservation_technique",
+        "fixation_method",
+        "fixative_type",
+        "sample_preservation",
+        "preservation_type",
+        "SPECIMEN_PRESERVATION_TYPE"
+    ],
+    "storage_location": [
+        "storage_location",
+        "storage_site",
+        "storage_place",
+        "facility_location",
+        "repository_location",
+        "freezer_location",
+        "storage_unit",
+        "biobank_location",
+        "TISSUE_SOURCE_SITE"
+    ],
+    "temperature": [
+        "temperature",
+        "storage_temperature",
+        "temp",
+        "storage_temp",
+        "sample_temperature",
+        "preservation_temperature",
+        "freezer_temperature",
+        "incubation_temperature"
+    ],
+    "container_type": [
+        "container_type",
+        "container",
+        "vessel_type",
+        "tube_type",
+        "sample_container",
+        "storage_container",
+        "collection_container",
+        "specimen_container"
+    ],
+    "storage_medium": [
+        "storage_medium",
+        "storage_buffer",
+        "preservation_medium",
+        "medium",
+        "preservation_solution",
+        "storage_solution",
+        "storage_reagent",
+        "preservative"
+    ],
+    "is_tumor_sample": [
+        "is_tumor_sample",
+        "tumor_flag",
+        "tumor_indicator",
+        "cancer_sample",
+        "malignant_sample",
+        "neoplastic_sample"
+    ],
+    "tumor_type": [
+        "tumor_type",
+        "cancer_type",
+        "neoplasm_type",
+        "tumor_classification",
+        "histologic_type",
+        "tumor_category",
+        "disease_type",
+        "CANCER_TYPE_DETAILED"
+    ],
+    "tumor_grade": [
+        "tumor_grade.diagnoses",
+        "tumor_grade.diagnoses",
+        "tumor_grade",
+        "grade",
+        "histologic_grade",
+        "pathologic_grade",
+        "tumor_grading",
+        "malignancy_grade",
+        "histological_type"
+    ],
+    "tumor_stage": [
+        "ajcc_pathologic_stage.diagnoses",
+        "tumor_stage",
+        "stage",
+        "cancer_stage",
+        "clinical_stage",
+        "pathologic_stage",
+        "tumor_staging",
+        "disease_stage"
+    ],
+    "normal_sample_id_paired": [
+        "normal_sample_id_paired",
+        "paired_normal",
+        "matched_normal",
+        "control_sample_id",
+        "reference_sample_id",
+        "normal_pair_id"
+    ],
+    "disease_status_at_collection": [
+        "person_neoplasm_cancer_status",
+        "progression_or_recurrence.diagnoses",
+        "disease_status",
+        "status_at_collection",
+        "collection_disease_status",
+        "clinical_status_at_collection",
+        "diagnosis_status_at_collection",
+        "condition_at_collection",
+        "progression_or_recurrence.diagnoses",
+        "progression",
+        "recurrence",
+        "PERSON_NEOPLASM_CANCER_STATUS"
+    ],
+    "viability_percent": [
+        "viability",
+        "viability_percent",
+        "cell_viability",
+        "viable_cells_percent",
+        "percent_viable",
+        "viability_rate"
+    ],
+    "concentration_ng_ul": [
+        "concentration",
+        "conc_ng_ul",
+        "nucleic_acid_concentration",
+        "sample_concentration",
+        "conc",
+        "concentration_value",
+        "dna_concentration",
+        "rna_concentration",
+        "protein_concentration",
+        "DNA_INPUT"
+    ],
+    "rna_integrity_number": [
+        "rna_integrity_number",
+        "rin",
+        "rna_quality",
+        "rna_quality_score",
+        "rna_integrity",
+        "rin_value"
+    ],
+    "tumor_purity_estimate": [
+        "tumor_purity_estimate",
+        "ABSOLUTE_Purity",
+        "tumor_purity",
+        "purity_estimate",
+        "tumor_cellularity",
+        "neoplastic_purity",
+        "purity_score",
+        "purity",
+        "cellularity_estimate"
+    ],
+    "contamination_percent": [
+        "contamination_percent",
+        "contamination",
+        "contamination_rate",
+        "cross_contamination",
+        "percent_contaminated",
+        "purity_conf_mad",
+        "sample_contamination",
+        "contamination_level"
+    ],
+    "Ensembl_ID": [
+        "ensembl",
+        "Ensembl_ID",
+        "EnsemblID",
+        "enid",
+        "en_id",
+        "gene_id",
+        "ensembl_gene_id",
+        "ensg",
+        "ens_id",
+        "geneid",
+        "Feature",
+        "Site1_Ensembl_Transcript_Id"
+    ],
+    "Transcript_ID": [
+        "Transcript_ID",
+        "tran_id",
+        "transcript",
+        "transcript_id",
+        "ensembl_transcript_id",
+        "enst",
+        "tr_id",
+        "tx_id",
+        "tx"
+    ],
+    "Entrez_Gene_ID": [
+        "Entrez_Gene_ID",
+        "EntrezGeneID",
+        "EntrezGene_Id",
+        "Entrez_ID",
+        "EntrezID",
+        "NCBI_Gene_ID",
+        "NCBI_GeneID",
+        "NCBI_Gene",
+        "GeneID",
+        "Gene_ID_Entrez"
+    ],
+    "Reference_Allele": [
+        "Reference_Allele",
+        "ref",
+        "reference",
+        "ref_allele",
+        "ref_base"
+    ],
+    "Alternate_Allele": [
+        "Alternate_Allele",
+        "alt",
+        "Tumor_Seq_Allele2",
+        "alternate",
+        "alt_allele",
+        "alt_base",
+        "variant_allele"
+    ],
+    "Variant_Type": [
+        "Variant_Type",
+        "var_type",
+        "type",
+        "mutation_type",
+        "variantclass",
+        "variant_class",
+        "substitution_type",
+        "variant_kind"
+    ],
+    "Nucleotide_Change": [
+        "Nucleotide_Change",
+        "Codons",
+        "nuc",
+        "cdna",
+        "hgvsc",
+        "cdna_change",
+        "coding_change",
+        "dna_change",
+        "nucleotide",
+        "c_change",
+        "hgvs_c",
+        "c_dot",
+        "cnotation"
+    ],
+    "Amino_Acid_Change": [
+        "Amino_Acid_Change",
+        "HGVSp_Short",
+        "aa",
+        "protein",
+        "hgvsp",
+        "aa_change",
+        "prot",
+        "protein_change",
+        "aa_substitution",
+        "p_change",
+        "hgvs_p",
+        "p_dot",
+        "pnotation"
+    ],
+    "Consequence": [
+        "Consequence",
+        "conseq",
+        "impact",
+        "effect",
+        "functional_consequence",
+        "variant_effect",
+        "function",
+        "annotation",
+        "impact_level",
+        "effect_type",
+        "Site2_Effect_On_Frame"
+    ],
+    "DNA_Variant_Allele_Frequency": [
+        "DNA_Variant_Allele_Frequency",
+        "dna_vaf",
+        "vaf",
+        "allele_frequency",
+        "af",
+        "variant_af",
+        "freq",
+        "allele_freq",
+        "variant_frequency",
+        "dna_af"
+    ],
+    "SIFT_score": [
+        "SIFT_score",
+        "sift",
+        "sift_score",
+        "sift_pred",
+        "sift_prediction"
+    ],
+    "PolyPhen_score": [
+        "PolyPhen_score",
+        "PolyPhen",
+        "polyphen_score",
+        "polyphen_pred",
+        "polyphen_prediction",
+        "pphen"
+    ],
+    "Clinical_Significance": [
+        "Clinical_Significance",
+        "clin",
+        "signif",
+        "clin_sig",
+        "clinical_significance",
+        "clinical_annotation",
+        "pathogenicity",
+        "pathogenic",
+        "clinvar_significance",
+        "significance"
+    ],
+    "Disease_Association": [
+        "Disease_Association",
+        "disease",
+        "assoc",
+        "disease_association",
+        "disease_link",
+        "disease_name",
+        "phenotype",
+        "condition",
+        "associated_disease",
+        "disease_term"
+    ],
+    "variant_caller_software": [
+        "variant_caller_software",
+        "callers",
+        "caller",
+        "tool",
+        "software",
+        "variant_caller",
+        "pipeline",
+        "source",
+        "variant_caller_name",
+        "calling_tool",
+        "Sequence_Source",
+        "Event_Info"
+    ],
+    "annotation_databases_used": [
+        "vep",
+        "annovar",
+        "snpeff",
+        "annotation_databases_used",
+        "database_used",
+        "annotation_source",
+        "database",
+        "annotation_db",
+        "annotation_tool",
+        "vep_version",
+        "clinvar_source"
+    ],
+    "reference_genome_version": [
+        "NCBI_Build",
+        "genome",
+        "ref_genome",
+        "reference_genome_version",
+        "ref_version"
+    ],
+    "Mutation_Origin": [
+        "Mutation_Status",
+        "origin",
+        "mutation_origin",
+        "mut_origin",
+        "type_origin",
+        "SV_Status"
+    ],
+    "Log2_Fold_Change": [
+        "Log2_Fold_Change",
+        "log2fc",
+        "log_fc",
+        "logfoldchange"
+    ],
+    "P_Value": [
+        "P_Value",
+        "pvalue",
+        "p_val",
+        "pval"
+    ],
+    "Expression_Value": [
+        "Expression_Value",
+        "expression",
+        "counts",
+        "expr_value"
+    ],
+    "Expression_Status": [
+        "Expression_Status",
+        "status",
+        "regulation",
+        "deg",
+        "significant"
+    ],
+    "Total_Reads_Input_for_Quantification": [
+        "Total_Reads_Input_for_Quantification",
+        "total_input",
+        "total_reads_input"
+    ],
+    "Total_Reads_Mapped": [
+        "Total_Reads_Mapped",
+        "mapped_reads",
+        "reads_mapped"
+    ],
+    "Percent_Reads_Mapped": [
+        "Percent_Reads_Mapped",
+        "percent_mapped",
+        "pct_reads_mapped"
+    ],
+    "Expression_Matrix_Path_URL": [
+        "Expression_Matrix_Path_URL",
+        "matrix_path",
+        "matrix_url",
+        "expr_matrix"
+    ],
+    "Quantification_Method": [
+        "quant_method",
+        "quantification_method"
+    ],
+    "Normalization_Method": [
+        "norm_method",
+        "normalization_method",
+        "norm",
+        "normalized"
+    ],
+    "Differential_Expression_Method": [
+        "Differential_Expression_Method",
+        "de_method",
+        "diff_expression_method",
+        "diff",
+        "de"
+    ],
+    "Gene_Annotation_Version": [
+        "Gene_Annotation_Version",
+        "annotation_version",
+        "gene_annot_version"
+    ],
+    "SV_Type": [
+        "SV_Type",
+        "svtype",
+        "StructuralVarianttype",
+        "Structural_Variant",
+        "Class"
+    ]
+}

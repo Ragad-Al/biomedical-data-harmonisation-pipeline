@@ -1,0 +1,231 @@
+{
+    "species": {
+        "human": {
+            "GRCh38": [
+                "grch38",
+                "hg38"
+            ],
+            "GRCh37": [
+                "grch37",
+                "hg19",
+                "b37"
+            ],
+            "T2T-CHM13": [
+                "t2t",
+                "chm13",
+                "hs1"
+            ],
+            "NCBI36": [
+                "ncbi36",
+                "hg18"
+            ],
+            "NCBI35": [
+                "ncbi35",
+                "hg17"
+            ],
+            "NCBI34": [
+                "ncbi34",
+                "hg16"
+            ],
+            "NCBI33": [
+                "ncbi33",
+                "hg15"
+            ],
+            "NCBI32": [
+                "ncbi32",
+                "hg14"
+            ]
+        },
+        "mouse": {
+            "GRCm39": [
+                "grcm39",
+                "mm39"
+            ],
+            "GRCm38": [
+                "grcm38",
+                "mm10"
+            ],
+            "NCBI37": [
+                "ncbi37",
+                "mm9"
+            ],
+            "NCBI36": [
+                "ncbi36",
+                "mm8"
+            ]
+        },
+        "rat": {
+            "mRatBN7.2": [
+                "mratbn7.2",
+                "rn7"
+            ],
+            "Rnor_6.0": [
+                "rnor_6.0",
+                "rn6"
+            ],
+            "Rnor_5.0": [
+                "rnor_5.0",
+                "rn5"
+            ]
+        },
+        "zebrafish": {
+            "GRCz11": [
+                "grcz11",
+                "danrer11"
+            ],
+            "GRCz10": [
+                "grcz10",
+                "danrer10"
+            ],
+            "Zv9": [
+                "zv9",
+                "danrer9"
+            ]
+        },
+        "fruitfly": {
+            "BDGP6": [
+                "bdgp6",
+                "dm6"
+            ],
+            "BDGP5": [
+                "bdgp5",
+                "dm5"
+            ],
+            "BDGP4": [
+                "bdgp4",
+                "dm3"
+            ],
+            "BDGP3": [
+                "bdgp3",
+                "dm2"
+            ],
+            "BDGP2": [
+                "bdgp2",
+                "dm1"
+            ]
+        },
+        "c_elegans": {
+            "WBcel235": [
+                "wbcel235",
+                "ce11"
+            ],
+            "WS220": [
+                "ws220",
+                "ce10"
+            ],
+            "WS190": [
+                "ws190",
+                "ce6"
+            ]
+        },
+        "yeast": {
+            "R64-1-1": [
+                "r64-1-1",
+                "saccer3"
+            ],
+            "R64-2-1": [
+                "r64-2-1"
+            ]
+        },
+        "arabidopsis": {
+            "TAIR10": [
+                "tair10"
+            ],
+            "TAIR9": [
+                "tair9"
+            ]
+        },
+        "bacteria": {
+            "E_coli_K12_MG1655": [
+                "ecoli_k12",
+                "mg1655"
+            ],
+            "E_coli_O157_H7": [
+                "ecoli_o157_h7"
+            ]
+        },
+        "virus": {
+            "NC_045512.2": [
+                "sars-cov-2",
+                "covid19",
+                "wuhan-hu-1"
+            ],
+            "NC_006273": [
+                "influenza_a_h1n1"
+            ],
+            "NC_001802": [
+                "hiv-1"
+            ]
+        }
+    },
+    "source_name_mappings": {
+        "tcga": "GRCh38",
+        "cosmic": "GRCh38",
+        "cbioportal": "GRCh37",
+        "gnomad": "GRCh37",
+        "exac": "GRCh37",
+        "ensembl": "GRCh38",
+        "refseq": "GRCh38",
+        "t2t": "T2T-CHM13",
+        "chm13": "T2T-CHM13",
+        "hs1": "T2T-CHM13",
+        "ncbi36": "NCBI36",
+        "hg18": "NCBI36",
+        "ncbi35": "NCBI35",
+        "hg17": "NCBI35",
+        "ncbi34": "NCBI34",
+        "hg16": "NCBI34",
+        "ncbi33": "NCBI33",
+        "hg15": "NCBI33",
+        "ncbi32": "NCBI32",
+        "hg14": "NCBI32",
+        "grcm39": "GRCm39",
+        "mm39": "GRCm39",
+        "grcm38": "GRCm38",
+        "mm10": "GRCm38",
+        "ncbi37": "NCBI37",
+        "mm9": "NCBI37",
+        "mm8": "NCBI36",
+        "mratbn7.2": "mRatBN7.2",
+        "rn7": "mRatBN7.2",
+        "rn6": "Rnor_6.0",
+        "rnor_6.0": "Rnor_6.0",
+        "rn5": "Rnor_5.0",
+        "rnor_5.0": "Rnor_5.0",
+        "grcz11": "GRCz11",
+        "danrer11": "GRCz11",
+        "grcz10": "GRCz10",
+        "danrer10": "GRCz10",
+        "zv9": "Zv9",
+        "danrer9": "Zv9",
+        "bdgp6": "BDGP6",
+        "dm6": "BDGP6",
+        "bdgp5": "BDGP5",
+        "dm5": "BDGP5",
+        "bdgp4": "BDGP4",
+        "dm3": "BDGP4",
+        "bdgp3": "BDGP3",
+        "dm2": "BDGP3",
+        "bdgp2": "BDGP2",
+        "dm1": "BDGP2",
+        "wbcel235": "WBcel235",
+        "ce11": "WBcel235",
+        "ws220": "WS220",
+        "ce10": "WS220",
+        "ws190": "WS190",
+        "ce6": "WS190",
+        "r64-1-1": "R64-1-1",
+        "saccer3": "R64-1-1",
+        "r64-2-1": "R64-2-1",
+        "tair10": "TAIR10",
+        "tair9": "TAIR9",
+        "ecoli_k12": "E_coli_K12_MG1655",
+        "mg1655": "E_coli_K12_MG1655",
+        "ecoli_o157_h7": "E_coli_O157_H7",
+        "sars-cov-2": "NC_045512.2",
+        "covid19": "NC_045512.2",
+        "wuhan-hu-1": "NC_045512.2",
+        "influenza_a_h1n1": "NC_006273",
+        "hiv-1": "NC_001802"
+    }
+}

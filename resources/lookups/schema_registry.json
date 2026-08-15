@@ -1,0 +1,2203 @@
+{
+  "version": "1.0",
+  "modules": {
+    "entity": {
+      "fields": {
+        "clinical_profile_json": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "json",
+          "synonyms": [
+            "clinical profile json",
+            "clinical_profile_json"
+          ],
+          "source_role": "either",
+          "subfields": {
+            "vital_status": {
+              "dtype": "string",
+              "synonyms": [
+                "OS_STATUS",
+                "alive_flag",
+                "alive_status",
+                "deceased_flag",
+                "donor_vital_status",
+                "life_status",
+                "living_status",
+                "mortality_status",
+                "status",
+                "vital status",
+                "vital_status"
+              ]
+            },
+            "date_of_death": {
+              "dtype": "date",
+              "synonyms": [
+                "date of death",
+                "date_of_death",
+                "death_date",
+                "deceased_date",
+                "deceased_dt",
+                "dod",
+                "time_of_death"
+              ]
+            },
+            "cause_of_death": {
+              "dtype": "string",
+              "synonyms": [
+                "cause of death",
+                "cause_of_death",
+                "death_cause",
+                "death_reason"
+              ]
+            },
+            "diagnosis": {
+              "dtype": "string",
+              "synonyms": [
+                "PRIMARY_SITE_PATIENT",
+                "_primary_disease",
+                "cancer_type_acronym",
+                "clinical_diagnosis",
+                "condition",
+                "diagnosis",
+                "diagnostic_label",
+                "disease_type",
+                "donor_diagnosis_icd10",
+                "medical_diagnosis",
+                "primary_diagnosis",
+                "primary_diagnosis.diagnoses",
+                "primary_disease"
+              ]
+            },
+            "diagnosis_date": {
+              "dtype": "date",
+              "synonyms": [
+                "date_diagnosed",
+                "date_of_diagnosis",
+                "diagnosis date",
+                "diagnosis_date",
+                "diagnostic_date",
+                "dx_date"
+              ]
+            },
+            "age_at_diagnosis": {
+              "dtype": "string",
+              "synonyms": [
+                "age",
+                "age at diagnosis",
+                "age_at_collection",
+                "age_at_diagnosis",
+                "age_at_index",
+                "age_at_index.demographic",
+                "age_at_initial_contact",
+                "age_at_initial_pathologic_diagnosis",
+                "age_at_sample_collection",
+                "age_at_time_of_collection",
+                "collection_age",
+                "donor_age_at_diagnosis",
+                "initial_age"
+              ]
+            },
+            "comorbidities": {
+              "dtype": "string",
+              "synonyms": [
+                "associated_conditions",
+                "co_morbidities",
+                "coexisting_conditions",
+                "comorbidities",
+                "comorbidity_list",
+                "secondary_conditions"
+              ]
+            },
+            "prior_treatments": {
+              "dtype": "string",
+              "synonyms": [
+                "first_therapy_type",
+                "history_neoadjuvant",
+                "past_treatment",
+                "past_treatments",
+                "previous_therapies",
+                "previous_treatment",
+                "previous_treatments",
+                "prior treatments",
+                "prior_treatment",
+                "prior_treatments",
+                "treatment_history",
+                "treatment_records"
+              ]
+            },
+            "performance_status": {
+              "dtype": "string",
+              "synonyms": [
+                "ecog_status",
+                "functional_level",
+                "functional_status",
+                "karnofsky_score",
+                "performance status",
+                "performance_status",
+                "ps_score"
+              ]
+            },
+            "family_history": {
+              "dtype": "string",
+              "synonyms": [
+                "PRIOR_MALIGNANCY",
+                "family history",
+                "family_conditions",
+                "family_history",
+                "family_medical_history",
+                "genetic_history",
+                "hereditary_history"
+              ]
+            },
+            "cardiovascular_disease": {
+              "dtype": "string",
+              "synonyms": [
+                "cardiac_disease",
+                "cardiovascular disease",
+                "cardiovascular_condition",
+                "cardiovascular_disease",
+                "cvd",
+                "heart_condition",
+                "heart_disease"
+              ]
+            }
+          }
+        },
+        "consent_status": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "INFORMED_CONSENT_VERIFIED",
+            "consent",
+            "consent status",
+            "consent_flag",
+            "consent_given",
+            "consent_indicator",
+            "consent_status",
+            "state.annotations"
+          ],
+          "source_role": "either"
+        },
+        "consent_version": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "consent version",
+            "consent_form_version",
+            "consent_ver",
+            "consent_version"
+          ],
+          "source_role": "either"
+        },
+        "creation_timestamp": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "datetime",
+          "synonyms": [
+            "creation timestamp",
+            "creation_timestamp"
+          ],
+          "source_role": "either"
+        },
+        "data_sharing_restrictions": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "data sharing restrictions",
+            "data_restrictions",
+            "data_sharing",
+            "data_sharing_restrictions",
+            "restrictions",
+            "sharing",
+            "sharing_limitations"
+          ],
+          "source_role": "either"
+        },
+        "date_of_birth": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "date",
+          "synonyms": [
+            "birth_date",
+            "birth_dt",
+            "birthday",
+            "date of birth",
+            "date_of_birth",
+            "dob"
+          ],
+          "source_role": "either"
+        },
+        "demographics_json": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "json",
+          "synonyms": [
+            "demographics json",
+            "demographics_json"
+          ],
+          "source_role": "either",
+          "subfields": {
+            "ethnicity": {
+              "dtype": "string",
+              "synonyms": [
+                "ethnic_background",
+                "ethnic_group",
+                "ethnic_origin",
+                "ethnicity",
+                "ethnicity.demographic"
+              ]
+            },
+            "race": {
+              "dtype": "string",
+              "synonyms": [
+                "race",
+                "race.demographic",
+                "racial_category",
+                "racial_group"
+              ]
+            },
+            "country_of_origin": {
+              "dtype": "string",
+              "synonyms": [
+                "birth_country",
+                "country",
+                "country of origin",
+                "country_of_birth",
+                "country_of_origin",
+                "country_origin",
+                "nationality",
+                "origin"
+              ]
+            },
+            "occupation": {
+              "dtype": "string",
+              "synonyms": [
+                "career",
+                "employment",
+                "job",
+                "job_catego",
+                "job_title",
+                "occupation",
+                "position",
+                "profession",
+                "role",
+                "work_type"
+              ]
+            },
+            "education_level": {
+              "dtype": "string",
+              "synonyms": [
+                "academic_level",
+                "degree_level",
+                "edu_level",
+                "education",
+                "education level",
+                "education_level",
+                "qualification"
+              ]
+            },
+            "smoking_status": {
+              "dtype": "string",
+              "synonyms": [
+                "cigarette_use",
+                "smoking status",
+                "smoking_habit",
+                "smoking_status",
+                "tobacco_smoking_history_indicator",
+                "tobacco_use"
+              ]
+            },
+            "alcohol_use": {
+              "dtype": "string",
+              "synonyms": [
+                "alcohol",
+                "alcohol use",
+                "alcohol_consumption",
+                "alcohol_habit",
+                "alcohol_history",
+                "alcohol_history.exposures",
+                "alcohol_intake",
+                "alcohol_status",
+                "alcohol_use",
+                "drink",
+                "drinking_status",
+                "ethanol_use"
+              ]
+            }
+          }
+        },
+        "entity_id": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "entity id",
+            "entity_id"
+          ],
+          "source_role": "derived",
+          "derivation": "uuid4"
+        },
+        "experimental_profile_json": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "json",
+          "synonyms": [
+            "experimental profile json",
+            "experimental_profile_json"
+          ],
+          "source_role": "either",
+          "subfields": {
+            "vital_status": {
+              "dtype": "string",
+              "synonyms": [
+                "OS_STATUS",
+                "alive_flag",
+                "alive_status",
+                "deceased_flag",
+                "donor_vital_status",
+                "life_status",
+                "living_status",
+                "mortality_status",
+                "status",
+                "vital status",
+                "vital_status"
+              ]
+            },
+            "date_of_death": {
+              "dtype": "date",
+              "synonyms": [
+                "date of death",
+                "date_of_death",
+                "death_date",
+                "deceased_date",
+                "deceased_dt",
+                "dod",
+                "time_of_death"
+              ]
+            },
+            "cause_of_death": {
+              "dtype": "string",
+              "synonyms": [
+                "cause of death",
+                "cause_of_death",
+                "death_cause",
+                "death_reason"
+              ]
+            },
+            "genotype": {
+              "dtype": "string",
+              "synonyms": [
+                "dna_profile",
+                "gene_type",
+                "genetic_profile",
+                "genetic_type",
+                "genetic_variation",
+                "genotype",
+                "mutation_profile",
+                "strain_genotype"
+              ]
+            },
+            "strain": {
+              "dtype": "string",
+              "synonyms": [
+                "breed",
+                "genetic_strain",
+                "line",
+                "model_strain",
+                "organism_strain",
+                "strain",
+                "substrain",
+                "variant"
+              ]
+            },
+            "disease_model": {
+              "dtype": "string",
+              "synonyms": [
+                "animal_model",
+                "disease model",
+                "disease_model",
+                "disease_representation",
+                "disease_type",
+                "experimental_model",
+                "model_system",
+                "model_type",
+                "pathology_model"
+              ]
+            },
+            "housing_conditions": {
+              "dtype": "string",
+              "synonyms": [
+                "cage_conditions",
+                "environment_conditions",
+                "facility_conditions",
+                "housing",
+                "housing conditions",
+                "housing_conditions",
+                "housing_environment",
+                "housing_type",
+                "living_conditions"
+              ]
+            },
+            "diet": {
+              "dtype": "string",
+              "synonyms": [
+                "diet",
+                "diet_type",
+                "dietary_habit",
+                "feeding_protocol",
+                "feeding_regimen",
+                "food_type",
+                "nutrition",
+                "nutrition_plan"
+              ]
+            },
+            "procedures": {
+              "dtype": "string",
+              "synonyms": [
+                "experimental_procedures",
+                "medical_procedures",
+                "methods",
+                "procedure_list",
+                "procedures",
+                "protocols",
+                "surgical_procedures",
+                "techniques"
+              ]
+            },
+            "observations": {
+              "dtype": "string",
+              "synonyms": [
+                "experimental_observations",
+                "findings",
+                "measurements",
+                "note",
+                "notes",
+                "observation_notes",
+                "observational_data",
+                "observations",
+                "observed_results"
+              ]
+            }
+          }
+        },
+        "external_entity_id": {
+          "required_output": true,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "_PATIENT",
+            "external entity id",
+            "external_entity_id",
+            "external_patient_id",
+            "icgc_donor_id",
+            "lab_animal_id",
+            "model_id",
+            "mouse_id",
+            "pat_id",
+            "patient_id",
+            "pid",
+            "preclinical_id",
+            "pt_id",
+            "rat_id",
+            "submitter",
+            "submitter_id"
+          ],
+          "source_role": "input"
+        },
+        "gender": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "assigned_sex",
+            "biological_sex",
+            "donor_sex",
+            "gender",
+            "gender.demographic",
+            "gender.demographics",
+            "gender.patient",
+            "gender_identity",
+            "sex",
+            "sex_at_birth"
+          ],
+          "source_role": "either"
+        },
+        "last_updated_timestamp": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "datetime",
+          "synonyms": [
+            "last updated timestamp",
+            "last_updated_timestamp"
+          ],
+          "source_role": "either"
+        },
+        "organism": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "org",
+            "organism",
+            "organism_name",
+            "source_organism",
+            "species"
+          ],
+          "source_role": "either"
+        },
+        "overall_survival_time": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "OS.time",
+            "OS_MONTHS",
+            "donor_survival_time",
+            "overall survival time",
+            "overall_survival_time"
+          ],
+          "source_role": "either"
+        }
+      }
+    },
+    "sample": {
+      "fields": {
+        "cell_type": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "cell lineage",
+            "cell type",
+            "cell_category",
+            "cell_class",
+            "cell_desc",
+            "cell_kind",
+            "cell_population",
+            "cell_subtype",
+            "cell_type",
+            "cellular_identity",
+            "cellular_subtype",
+            "cellular_type",
+            "composition",
+            "composition.samples"
+          ],
+          "source_role": "either"
+        },
+        "collection_date": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "date",
+          "synonyms": [
+            "FORM_COMPLETION_DATE",
+            "collection date",
+            "collection_date",
+            "collection_dt",
+            "date_collected",
+            "date_of_collection",
+            "form_completion_date",
+            "sampling_date",
+            "specimen_collection_date"
+          ],
+          "source_role": "either"
+        },
+        "collection_method": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "SAMPLE_COLLECTION_SOURCE",
+            "collection method",
+            "collection_method",
+            "collection_technique",
+            "method_of_collection",
+            "procedure",
+            "sampling_method",
+            "specimen_collection_method"
+          ],
+          "source_role": "either"
+        },
+        "collection_time": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "time",
+          "synonyms": [
+            "collection time",
+            "collection_time",
+            "collection_tm",
+            "sampling_time",
+            "specimen_collection_time",
+            "time_collected",
+            "time_of_collection"
+          ],
+          "source_role": "either"
+        },
+        "concentration_ng_ul": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "DNA_INPUT",
+            "conc",
+            "conc_ng_ul",
+            "concentration",
+            "concentration ng ul",
+            "concentration_ng_ul",
+            "concentration_value",
+            "dna_concentration",
+            "nucleic_acid_concentration",
+            "protein_concentration",
+            "rna_concentration",
+            "sample_concentration"
+          ],
+          "source_role": "either"
+        },
+        "creation_timestamp": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "datetime",
+          "synonyms": [
+            "creation timestamp",
+            "creation_timestamp"
+          ],
+          "source_role": "either"
+        },
+        "disease_status_at_collection": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "PERSON_NEOPLASM_CANCER_STATUS",
+            "clinical_status_at_collection",
+            "collection_disease_status",
+            "condition_at_collection",
+            "diagnosis_status_at_collection",
+            "disease status at collection",
+            "disease_status",
+            "disease_status_at_collection",
+            "person_neoplasm_cancer_status",
+            "progression",
+            "progression_or_recurrence.diagnoses",
+            "recurrence",
+            "status_at_collection"
+          ],
+          "source_role": "either"
+        },
+        "entity_id": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "entity id",
+            "entity_id"
+          ],
+          "source_role": "derived",
+          "derivation": "linked_from_entity_table"
+        },
+        "external_entity_id": {
+          "required_output": false,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "_PATIENT",
+            "external entity id",
+            "external_entity_id",
+            "external_patient_id",
+            "icgc_donor_id",
+            "lab_animal_id",
+            "model_id",
+            "mouse_id",
+            "pat_id",
+            "patient_id",
+            "pid",
+            "preclinical_id",
+            "pt_id",
+            "rat_id",
+            "submitter",
+            "submitter_id"
+          ],
+          "source_role": "input"
+        },
+        "external_sample_id": {
+          "required_output": true,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "Sample_ID",
+            "biospecimen_id",
+            "external sample id",
+            "external_sample_id",
+            "geo_accession",
+            "s_id",
+            "sample",
+            "sampleID",
+            "sample_name",
+            "samplename",
+            "sid",
+            "xena_sample"
+          ],
+          "source_role": "input"
+        },
+        "is_tumor_sample": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "bool",
+          "synonyms": [
+            "cancer_sample",
+            "is tumor sample",
+            "is_tumor_sample",
+            "malignant_sample",
+            "neoplastic_sample",
+            "tumor_flag",
+            "tumor_indicator"
+          ],
+          "source_role": "either"
+        },
+        "last_updated_timestamp": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "datetime",
+          "synonyms": [
+            "last updated timestamp",
+            "last_updated_timestamp"
+          ],
+          "source_role": "either"
+        },
+        "normal_sample_id_paired": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "control_sample_id",
+            "matched_normal",
+            "normal sample id paired",
+            "normal_pair_id",
+            "normal_sample_id_paired",
+            "paired_normal",
+            "reference_sample_id"
+          ],
+          "source_role": "either"
+        },
+        "preservation_method": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "SPECIMEN_PRESERVATION_TYPE",
+            "fixation_method",
+            "fixative_type",
+            "preservation method",
+            "preservation_method",
+            "preservation_method.samples",
+            "preservation_technique",
+            "preservation_type",
+            "preserve",
+            "sample_preservation",
+            "storage_method"
+          ],
+          "source_role": "either"
+        },
+        "purity_metrics_json": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "json",
+          "synonyms": [
+            "purity metrics json",
+            "purity_metrics_json"
+          ],
+          "source_role": "either",
+          "subfields": {
+            "rna_integrity_number": {
+              "dtype": "string",
+              "synonyms": [
+                "rin",
+                "rin_value",
+                "rna integrity number",
+                "rna_integrity",
+                "rna_integrity_number",
+                "rna_quality",
+                "rna_quality_score"
+              ]
+            },
+            "tumor_purity_estimate": {
+              "dtype": "string",
+              "synonyms": [
+                "ABSOLUTE_Purity",
+                "cellularity_estimate",
+                "neoplastic_purity",
+                "purity",
+                "purity_estimate",
+                "purity_score",
+                "tumor purity estimate",
+                "tumor_cellularity",
+                "tumor_purity",
+                "tumor_purity_estimate"
+              ]
+            },
+            "contamination_percent": {
+              "dtype": "string",
+              "synonyms": [
+                "contamination",
+                "contamination percent",
+                "contamination_level",
+                "contamination_percent",
+                "contamination_rate",
+                "cross_contamination",
+                "percent_contaminated",
+                "purity_conf_mad",
+                "sample_contamination"
+              ]
+            }
+          }
+        },
+        "sample_id": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Sample_ID",
+            "biospecimen_id",
+            "geo_accession",
+            "s_id",
+            "sample",
+            "sample id",
+            "sampleID",
+            "sample_id",
+            "sample_name",
+            "sid",
+            "xena_sample"
+          ],
+          "source_role": "derived",
+          "derivation": "uuid4"
+        },
+        "sample_type": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "sample type",
+            "sample_type",
+            "sample_type.samples",
+            "type"
+          ],
+          "source_role": "either"
+        },
+        "storage_conditions_json": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "json",
+          "synonyms": [
+            "storage conditions json",
+            "storage_conditions_json"
+          ],
+          "source_role": "either",
+          "subfields": {
+            "temperature": {
+              "dtype": "string",
+              "synonyms": [
+                "freezer_temperature",
+                "incubation_temperature",
+                "preservation_temperature",
+                "sample_temperature",
+                "storage_temp",
+                "storage_temperature",
+                "temp",
+                "temperature"
+              ]
+            },
+            "container_type": {
+              "dtype": "string",
+              "synonyms": [
+                "collection_container",
+                "container",
+                "container type",
+                "container_type",
+                "sample_container",
+                "specimen_container",
+                "storage_container",
+                "tube_type",
+                "vessel_type"
+              ]
+            },
+            "storage_medium": {
+              "dtype": "string",
+              "synonyms": [
+                "medium",
+                "preservation_medium",
+                "preservation_solution",
+                "preservative",
+                "storage medium",
+                "storage_buffer",
+                "storage_medium",
+                "storage_reagent",
+                "storage_solution"
+              ]
+            },
+            "location": {
+              "dtype": "string",
+              "synonyms": [
+                "location"
+              ]
+            }
+          }
+        },
+        "storage_location": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "TISSUE_SOURCE_SITE",
+            "biobank_location",
+            "facility_location",
+            "freezer_location",
+            "repository_location",
+            "storage location",
+            "storage_location",
+            "storage_place",
+            "storage_site",
+            "storage_unit"
+          ],
+          "source_role": "either"
+        },
+        "study_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "study id",
+            "study_id"
+          ],
+          "source_role": "either"
+        },
+        "tissue_site": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "anatomic_site",
+            "anatomical_location",
+            "biopsy_site",
+            "collection_site",
+            "organ_site",
+            "primary_site",
+            "primary_tissue",
+            "sample_site",
+            "site",
+            "tissue site",
+            "tissue_or_organ_of_origin.diagnoses",
+            "tissue_origin",
+            "tissue_site",
+            "tissue_source",
+            "tumor_tissue_site"
+          ],
+          "source_role": "either"
+        },
+        "tumor_grade": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "grade",
+            "histologic_grade",
+            "histological_type",
+            "malignancy_grade",
+            "pathologic_grade",
+            "tumor grade",
+            "tumor_grade",
+            "tumor_grade.diagnoses",
+            "tumor_grading"
+          ],
+          "source_role": "either"
+        },
+        "tumor_stage": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "ajcc_pathologic_stage.diagnoses",
+            "cancer_stage",
+            "clinical_stage",
+            "disease_stage",
+            "pathologic_stage",
+            "stage",
+            "tumor stage",
+            "tumor_stage",
+            "tumor_staging"
+          ],
+          "source_role": "either"
+        },
+        "tumor_type": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "CANCER_TYPE_DETAILED",
+            "cancer_type",
+            "disease_type",
+            "histologic_type",
+            "neoplasm_type",
+            "tumor type",
+            "tumor_category",
+            "tumor_classification",
+            "tumor_type"
+          ],
+          "source_role": "either"
+        },
+        "viability_percent": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "cell_viability",
+            "percent_viable",
+            "viability",
+            "viability percent",
+            "viability_percent",
+            "viability_rate",
+            "viable_cells_percent"
+          ],
+          "source_role": "either"
+        }
+      }
+    },
+    "mutation": {
+      "fields": {
+        "alternate_allele": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Alternate_Allele",
+            "Tumor_Seq_Allele2",
+            "alt",
+            "alt_allele",
+            "alt_base",
+            "alternate",
+            "alternate allele",
+            "alternate_allele",
+            "variant_allele"
+          ],
+          "source_role": "either"
+        },
+        "amino_acid_change": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Amino_Acid_Change",
+            "HGVSp_Short",
+            "aa",
+            "aa_change",
+            "aa_substitution",
+            "amino acid change",
+            "amino_acid_change",
+            "hgvs_p",
+            "hgvsp",
+            "p_change",
+            "p_dot",
+            "pnotation",
+            "prot",
+            "protein",
+            "protein_change"
+          ],
+          "source_role": "either"
+        },
+        "annotation_databases_used": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "annotation databases used",
+            "annotation_databases_used",
+            "annotation_db",
+            "annotation_source",
+            "annotation_tool",
+            "annovar",
+            "clinvar_source",
+            "database",
+            "database_used",
+            "snpeff",
+            "vep",
+            "vep_version"
+          ],
+          "source_role": "either"
+        },
+        "chromosome": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Chromosome",
+            "Site1_Chromosome",
+            "chr",
+            "chrom",
+            "chromosome",
+            "chromosome_name"
+          ],
+          "source_role": "either"
+        },
+        "clinical_significance": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Clinical_Significance",
+            "clin",
+            "clin_sig",
+            "clinical significance",
+            "clinical_annotation",
+            "clinical_significance",
+            "clinvar_significance",
+            "pathogenic",
+            "pathogenicity",
+            "signif",
+            "significance"
+          ],
+          "source_role": "either"
+        },
+        "consequence": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Consequence",
+            "Site2_Effect_On_Frame",
+            "annotation",
+            "conseq",
+            "consequence",
+            "effect",
+            "effect_type",
+            "function",
+            "functional_consequence",
+            "impact",
+            "impact_level",
+            "variant_effect"
+          ],
+          "source_role": "either"
+        },
+        "disease_association": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Disease_Association",
+            "assoc",
+            "associated_disease",
+            "condition",
+            "disease",
+            "disease association",
+            "disease_association",
+            "disease_link",
+            "disease_name",
+            "disease_term",
+            "phenotype"
+          ],
+          "source_role": "either"
+        },
+        "dna_variant_allele_frequency": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "DNA_Variant_Allele_Frequency",
+            "af",
+            "allele_freq",
+            "allele_frequency",
+            "dna variant allele frequency",
+            "dna_af",
+            "dna_vaf",
+            "dna_variant_allele_frequency",
+            "freq",
+            "vaf",
+            "variant_af",
+            "variant_frequency"
+          ],
+          "source_role": "either"
+        },
+        "ensembl_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "EnsemblID",
+            "Ensembl_ID",
+            "Feature",
+            "Site1_Ensembl_Transcript_Id",
+            "en_id",
+            "enid",
+            "ens_id",
+            "ensembl",
+            "ensembl id",
+            "ensembl_gene_id",
+            "ensembl_id",
+            "ensg",
+            "gene_id",
+            "geneid"
+          ],
+          "source_role": "either"
+        },
+        "gene_symbol": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Gene_Symbol",
+            "Hugo_Symbol",
+            "NAME",
+            "Site1_Hugo_Symbol",
+            "gene",
+            "gene symbol",
+            "gene_name",
+            "gene_symbol",
+            "hugo",
+            "symbol"
+          ],
+          "source_role": "either"
+        },
+        "mutation_origin": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Mutation_Origin",
+            "Mutation_Status",
+            "SV_Status",
+            "mut_origin",
+            "mutation origin",
+            "mutation_origin",
+            "origin",
+            "type_origin"
+          ],
+          "source_role": "either"
+        },
+        "nucleotide_change": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Codons",
+            "Nucleotide_Change",
+            "c_change",
+            "c_dot",
+            "cdna",
+            "cdna_change",
+            "cnotation",
+            "coding_change",
+            "dna_change",
+            "hgvs_c",
+            "hgvsc",
+            "nuc",
+            "nucleotide",
+            "nucleotide change",
+            "nucleotide_change"
+          ],
+          "source_role": "either"
+        },
+        "polyphen_score": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "polyphen score",
+            "polyphen_score"
+          ],
+          "source_role": "either"
+        },
+        "position_end": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "End_Position",
+            "Position_End",
+            "Site2_Position",
+            "chromend",
+            "end",
+            "position end",
+            "position_end",
+            "stop"
+          ],
+          "source_role": "either"
+        },
+        "position_start": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "Position_Start",
+            "Site1_Position",
+            "Start_Position",
+            "bp",
+            "chromstart",
+            "coordinate",
+            "mapinfo",
+            "pos",
+            "position",
+            "position start",
+            "position_start",
+            "start"
+          ],
+          "source_role": "either"
+        },
+        "reference_allele": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Reference_Allele",
+            "ref",
+            "ref_allele",
+            "ref_base",
+            "reference",
+            "reference allele",
+            "reference_allele"
+          ],
+          "source_role": "either"
+        },
+        "reference_genome_version": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "NCBI_Build",
+            "genome",
+            "ref_genome",
+            "ref_version",
+            "reference genome version",
+            "reference_genome_version"
+          ],
+          "source_role": "either"
+        },
+        "sample_id": {
+          "required_output": true,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "Sample_ID",
+            "biospecimen_id",
+            "geo_accession",
+            "s_id",
+            "sample",
+            "sample id",
+            "sampleID",
+            "sample_id",
+            "sample_name",
+            "sid",
+            "xena_sample"
+          ],
+          "source_role": "input"
+        },
+        "sift_score": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "SIFT_score",
+            "sift",
+            "sift score",
+            "sift_pred",
+            "sift_prediction",
+            "sift_score"
+          ],
+          "source_role": "either"
+        },
+        "transcript_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Transcript_ID",
+            "ensembl_transcript_id",
+            "enst",
+            "tr_id",
+            "tran_id",
+            "transcript",
+            "transcript id",
+            "transcript_id",
+            "tx",
+            "tx_id"
+          ],
+          "source_role": "either"
+        },
+        "variant_caller_software": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Event_Info",
+            "Sequence_Source",
+            "caller",
+            "callers",
+            "calling_tool",
+            "pipeline",
+            "software",
+            "source",
+            "tool",
+            "variant caller software",
+            "variant_caller",
+            "variant_caller_name",
+            "variant_caller_software"
+          ],
+          "source_role": "either"
+        },
+        "variant_type": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Variant_Type",
+            "mutation_type",
+            "substitution_type",
+            "type",
+            "var_type",
+            "variant type",
+            "variant_class",
+            "variant_kind",
+            "variant_type",
+            "variantclass"
+          ],
+          "source_role": "either"
+        }
+      }
+    },
+    "sv": {
+      "fields": {
+        "annotation_databases_used": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "annotation databases used",
+            "annotation_databases_used",
+            "annotation_db",
+            "annotation_source",
+            "annotation_tool",
+            "annovar",
+            "clinvar_source",
+            "database",
+            "database_used",
+            "snpeff",
+            "vep",
+            "vep_version"
+          ],
+          "source_role": "either"
+        },
+        "chromosome": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Chromosome",
+            "Site1_Chromosome",
+            "chr",
+            "chrom",
+            "chromosome",
+            "chromosome_name"
+          ],
+          "source_role": "either"
+        },
+        "clinical_significance": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Clinical_Significance",
+            "clin",
+            "clin_sig",
+            "clinical significance",
+            "clinical_annotation",
+            "clinical_significance",
+            "clinvar_significance",
+            "pathogenic",
+            "pathogenicity",
+            "signif",
+            "significance"
+          ],
+          "source_role": "either"
+        },
+        "consequence": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Consequence",
+            "Site2_Effect_On_Frame",
+            "annotation",
+            "conseq",
+            "consequence",
+            "effect",
+            "effect_type",
+            "function",
+            "functional_consequence",
+            "impact",
+            "impact_level",
+            "variant_effect"
+          ],
+          "source_role": "either"
+        },
+        "disease_association": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Disease_Association",
+            "assoc",
+            "associated_disease",
+            "condition",
+            "disease",
+            "disease association",
+            "disease_association",
+            "disease_link",
+            "disease_name",
+            "disease_term",
+            "phenotype"
+          ],
+          "source_role": "either"
+        },
+        "ensembl_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "EnsemblID",
+            "Ensembl_ID",
+            "Feature",
+            "Site1_Ensembl_Transcript_Id",
+            "en_id",
+            "enid",
+            "ens_id",
+            "ensembl",
+            "ensembl id",
+            "ensembl_gene_id",
+            "ensembl_id",
+            "ensg",
+            "gene_id",
+            "geneid"
+          ],
+          "source_role": "either"
+        },
+        "gene_symbol": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Gene_Symbol",
+            "Hugo_Symbol",
+            "NAME",
+            "Site1_Hugo_Symbol",
+            "gene",
+            "gene symbol",
+            "gene_name",
+            "gene_symbol",
+            "hugo",
+            "symbol"
+          ],
+          "source_role": "either"
+        },
+        "mutation_origin": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Mutation_Origin",
+            "Mutation_Status",
+            "SV_Status",
+            "mut_origin",
+            "mutation origin",
+            "mutation_origin",
+            "origin",
+            "type_origin"
+          ],
+          "source_role": "either"
+        },
+        "position_end": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "End_Position",
+            "Position_End",
+            "Site2_Position",
+            "chromend",
+            "end",
+            "position end",
+            "position_end",
+            "stop"
+          ],
+          "source_role": "either"
+        },
+        "position_start": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "Position_Start",
+            "Site1_Position",
+            "Start_Position",
+            "bp",
+            "chromstart",
+            "coordinate",
+            "mapinfo",
+            "pos",
+            "position",
+            "position start",
+            "position_start",
+            "start"
+          ],
+          "source_role": "either"
+        },
+        "reference_genome_version": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "NCBI_Build",
+            "genome",
+            "ref_genome",
+            "ref_version",
+            "reference genome version",
+            "reference_genome_version"
+          ],
+          "source_role": "either"
+        },
+        "sample_id": {
+          "required_output": true,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "Sample_ID",
+            "biospecimen_id",
+            "geo_accession",
+            "s_id",
+            "sample",
+            "sample id",
+            "sampleID",
+            "sample_id",
+            "sample_name",
+            "sid",
+            "xena_sample"
+          ],
+          "source_role": "input"
+        },
+        "sv_type": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Class",
+            "SV_Type",
+            "StructuralVarianttype",
+            "Structural_Variant",
+            "sv type",
+            "sv_type",
+            "svtype"
+          ],
+          "source_role": "either"
+        },
+        "variant_caller_software": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Event_Info",
+            "Sequence_Source",
+            "caller",
+            "callers",
+            "calling_tool",
+            "pipeline",
+            "software",
+            "source",
+            "tool",
+            "variant caller software",
+            "variant_caller",
+            "variant_caller_name",
+            "variant_caller_software"
+          ],
+          "source_role": "either"
+        }
+      }
+    },
+    "methylation": {
+      "fields": {
+        "adjusted_p_value": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "Adjusted_P_Value",
+            "adj_p",
+            "adj_p_value",
+            "adjp",
+            "adjusted",
+            "adjusted p value",
+            "adjusted p-value",
+            "adjusted_p_value",
+            "fdr",
+            "padj"
+          ],
+          "source_role": "either"
+        },
+        "beta_value": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "Beta_Value",
+            "beta",
+            "beta value",
+            "beta_value",
+            "intensity",
+            "m_value",
+            "methylation_level",
+            "value"
+          ],
+          "source_role": "either"
+        },
+        "chromosome": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Chromosome",
+            "Site1_Chromosome",
+            "chr",
+            "chrom",
+            "chromosome",
+            "chromosome_name"
+          ],
+          "source_role": "either"
+        },
+        "cpg_id": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "cpg id",
+            "cpg_id"
+          ],
+          "source_role": "either"
+        },
+        "expression_status": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Expression_Status",
+            "deg",
+            "expression status",
+            "expression_status",
+            "regulation",
+            "significant",
+            "status"
+          ],
+          "source_role": "either"
+        },
+        "gene_symbol": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Gene_Symbol",
+            "Hugo_Symbol",
+            "NAME",
+            "Site1_Hugo_Symbol",
+            "gene",
+            "gene symbol",
+            "gene_name",
+            "gene_symbol",
+            "hugo",
+            "symbol"
+          ],
+          "source_role": "either"
+        },
+        "methylation_caller_software": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "caller",
+            "methylation caller software",
+            "methylation_caller_software",
+            "software",
+            "tool"
+          ],
+          "source_role": "either"
+        },
+        "modification_type": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Modification_Type",
+            "hydroxy",
+            "methyl",
+            "mod",
+            "modification type",
+            "modification_type"
+          ],
+          "source_role": "either"
+        },
+        "position_end": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "End_Position",
+            "Position_End",
+            "Site2_Position",
+            "chromend",
+            "end",
+            "position end",
+            "position_end",
+            "stop"
+          ],
+          "source_role": "either"
+        },
+        "position_start": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "Position_Start",
+            "Site1_Position",
+            "Start_Position",
+            "bp",
+            "chromstart",
+            "coordinate",
+            "mapinfo",
+            "pos",
+            "position",
+            "position start",
+            "position_start",
+            "start"
+          ],
+          "source_role": "either"
+        },
+        "region_context": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "DESCRIPTION",
+            "Region_Context",
+            "annotation",
+            "context",
+            "gene_region",
+            "island",
+            "region",
+            "region context",
+            "region_context",
+            "relation_to_ucsc_cpg_island",
+            "strand"
+          ],
+          "source_role": "either"
+        },
+        "sample_id": {
+          "required_output": true,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "Sample_ID",
+            "biospecimen_id",
+            "geo_accession",
+            "s_id",
+            "sample",
+            "sample id",
+            "sampleID",
+            "sample_id",
+            "sample_name",
+            "sid",
+            "xena_sample"
+          ],
+          "source_role": "input"
+        }
+      }
+    },
+    "rnaseq": {
+      "fields": {
+        "adjusted_p_value": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "Adjusted_P_Value",
+            "adj_p",
+            "adj_p_value",
+            "adjp",
+            "adjusted",
+            "adjusted p value",
+            "adjusted p-value",
+            "adjusted_p_value",
+            "fdr",
+            "padj"
+          ],
+          "source_role": "either"
+        },
+        "differential_expression_method": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Differential_Expression_Method",
+            "de",
+            "de_method",
+            "diff",
+            "diff_expression_method",
+            "differential expression method",
+            "differential_expression_method"
+          ],
+          "source_role": "either"
+        },
+        "ensembl_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "EnsemblID",
+            "Ensembl_ID",
+            "Feature",
+            "Site1_Ensembl_Transcript_Id",
+            "en_id",
+            "enid",
+            "ens_id",
+            "ensembl",
+            "ensembl id",
+            "ensembl_gene_id",
+            "ensembl_id",
+            "ensg",
+            "gene_id",
+            "geneid"
+          ],
+          "source_role": "either"
+        },
+        "entrez_gene_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "EntrezGeneID",
+            "EntrezGene_Id",
+            "EntrezID",
+            "Entrez_Gene_ID",
+            "Entrez_ID",
+            "GeneID",
+            "Gene_ID_Entrez",
+            "NCBI_Gene",
+            "NCBI_GeneID",
+            "NCBI_Gene_ID",
+            "entrez gene id",
+            "entrez_gene_id"
+          ],
+          "source_role": "either"
+        },
+        "expression_matrix_path_url": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Expression_Matrix_Path_URL",
+            "expr_matrix",
+            "expression matrix path url",
+            "expression_matrix_path_url",
+            "matrix_path",
+            "matrix_url"
+          ],
+          "source_role": "either"
+        },
+        "expression_status": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Expression_Status",
+            "deg",
+            "expression status",
+            "expression_status",
+            "regulation",
+            "significant",
+            "status"
+          ],
+          "source_role": "either"
+        },
+        "expression_value": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "Expression_Value",
+            "counts",
+            "expr_value",
+            "expression",
+            "expression value",
+            "expression_value"
+          ],
+          "source_role": "either"
+        },
+        "gene_annotation_version": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Gene_Annotation_Version",
+            "annotation_version",
+            "gene annotation version",
+            "gene_annot_version",
+            "gene_annotation_version"
+          ],
+          "source_role": "either"
+        },
+        "gene_symbol": {
+          "required_output": true,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Gene_Symbol",
+            "Hugo_Symbol",
+            "NAME",
+            "Site1_Hugo_Symbol",
+            "gene",
+            "gene symbol",
+            "gene_name",
+            "gene_symbol",
+            "hugo",
+            "symbol"
+          ],
+          "source_role": "either"
+        },
+        "log2_fold_change": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "Log2_Fold_Change",
+            "log2 fold change",
+            "log2_fold_change",
+            "log2fc",
+            "log_fc",
+            "logfoldchange"
+          ],
+          "source_role": "either"
+        },
+        "normalization_method": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Normalization_Method",
+            "norm",
+            "norm_method",
+            "normalization method",
+            "normalization_method",
+            "normalized"
+          ],
+          "source_role": "either"
+        },
+        "p_value": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "P_Value",
+            "p value",
+            "p_val",
+            "p_value",
+            "pval",
+            "pvalue"
+          ],
+          "source_role": "either"
+        },
+        "percent_reads_mapped": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "float",
+          "synonyms": [
+            "Percent_Reads_Mapped",
+            "pct_reads_mapped",
+            "percent reads mapped",
+            "percent_mapped",
+            "percent_reads_mapped"
+          ],
+          "source_role": "either"
+        },
+        "quantification_method": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Quantification_Method",
+            "quant_method",
+            "quantification method",
+            "quantification_method"
+          ],
+          "source_role": "either"
+        },
+        "sample_id": {
+          "required_output": true,
+          "required_input": true,
+          "dtype": "string",
+          "synonyms": [
+            "Sample_ID",
+            "biospecimen_id",
+            "geo_accession",
+            "s_id",
+            "sample",
+            "sample id",
+            "sampleID",
+            "sample_id",
+            "sample_name",
+            "sid",
+            "xena_sample"
+          ],
+          "source_role": "input"
+        },
+        "total_reads_input_for_quantification": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "Total_Reads_Input_for_Quantification",
+            "total reads input for quantification",
+            "total_input",
+            "total_reads_input",
+            "total_reads_input_for_quantification"
+          ],
+          "source_role": "either"
+        },
+        "total_reads_mapped": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "int",
+          "synonyms": [
+            "Total_Reads_Mapped",
+            "mapped_reads",
+            "reads_mapped",
+            "total reads mapped",
+            "total_reads_mapped"
+          ],
+          "source_role": "either"
+        },
+        "transcript_id": {
+          "required_output": false,
+          "required_input": false,
+          "dtype": "string",
+          "synonyms": [
+            "Transcript_ID",
+            "ensembl_transcript_id",
+            "enst",
+            "tr_id",
+            "tran_id",
+            "transcript",
+            "transcript id",
+            "transcript_id",
+            "tx",
+            "tx_id"
+          ],
+          "source_role": "either"
+        }
+      }
+    }
+  }
+}

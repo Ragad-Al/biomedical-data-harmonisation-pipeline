@@ -1,0 +1,17 @@
+{
+    "tcga": "Homo sapiens",
+    "gtex": "Homo sapiens",
+    "human": "Homo sapiens",
+    "homo": "Homo sapiens",
+    "donor": "Homo sapiens",
+    "clinical": "Homo sapiens",
+    "mouse": "Mus musculus",
+    "murine": "Mus musculus",
+    "mus_": "Mus musculus",
+    "rat": "Rattus norvegicus",
+    "rattus": "Rattus norvegicus",
+    "fly": "Drosophila melanogaster",
+    "drosophila": "Drosophila melanogaster",
+    "zebrafish": "Danio rerio",
+    "danio": "Danio rerio"
+}
