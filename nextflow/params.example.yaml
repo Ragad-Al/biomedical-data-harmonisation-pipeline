@@ -1,0 +1,22 @@
+outdir: "../results/example_cohort"
+
+# Required inputs: one or more entity/sample files from a public cohort
+entity_file:
+  - "../data/example/clinical.tsv"
+  - "../data/example/survival.tsv"
+
+sample_file:
+  - "../data/example/clinical.tsv"
+  - "../data/example/survival.tsv"
+
+# Optional downstream modalities
+mutation_file: "../data/example/mutations.tsv"
+mutation_source: "tcga"
+
+# sv_file: "../data/example/structural_variants.tsv"
+# sv_source: "tcga"
+
+rnaseq_file: "../data/example/rnaseq.tsv"
+
+methylation_file: "../data/example/methylation.tsv"
+# methylation_manifest: "../data/example/methylation_manifest.tsv"
