@@ -196,23 +196,28 @@ biomedical-data-harmonisation-pipeline/
 │   ├── sv.py
 │   ├── RNAseq.py
 │   ├── methylation.py
-│   └── transform_library.py
+│   ├── transform_library.py
+│   └── __init__.py
 │
 ├── resources/
-│   ├── schema_registry.json
-│   ├── column_name_lookup.json
-│   ├── column_content_lookup.json
-│   ├── de_methods.json
-│   ├── methylation_caller_software.json
-│   ├── modification_type.json
-│   ├── mutation_sources.json
-│   ├── organism_map.json
-│   ├── quantification_method.json
-│   └── reference_genomes.json
+│   └── lookups/
+│       ├── schema_registry.json
+│       ├── column_name_lookup.json
+│       ├── column_content_lookup.json
+│       ├── de_methods.json
+│       ├── methylation_caller_software.json
+│       ├── modification_type.json
+│       ├── mutation_sources.json
+│       ├── organism_map.json
+│       ├── quantification_method.json
+│       └── reference_genomes.json
 │
-├── main.nf
-├── nextflow.config
-├── params.yaml
+├── nextflow/
+│   ├── main.nf
+│   ├── nextflow.config
+│   └── params.example.yaml
+│
+├── docs/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
